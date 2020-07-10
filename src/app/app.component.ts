@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   public appPages = [
     {
       title: 'task登録',
-      url: '/folder/Inbox',
+      url: 'pageone',
       icon: 'home'
     },
     {
@@ -23,8 +23,7 @@ export class AppComponent implements OnInit {
       icon: 'list'
     }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-
+  
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -41,7 +40,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    const path = window.location.pathname.split('folder/')[1];
+    const path = window.location.pathname.split('pageone/')[1];
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }

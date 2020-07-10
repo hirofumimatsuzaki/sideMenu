@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
 @Component({
-  selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  selector: 'app-pageone',
+  templateUrl: './pageone.page.html',
+  styleUrls: ['./pageone.page.scss'],
 })
-export class FolderPage  {
+export class PageonePage implements OnInit {
+
 
   constructor() { }
 
   ngOnInit() {
-
+    
   }
+
 
 }
